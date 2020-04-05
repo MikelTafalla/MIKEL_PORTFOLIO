@@ -34,25 +34,23 @@ body {
     padding-bottom: 5%;
 }
 
+
 /*modifies Education and Job experience boxes*/
 .box {
     background-color: beige;
     width: 40%;
     border: solid;
-    margin-right: 10%;
-    margin-left: 1em;
+    margin-right: 5%;
+    margin-left: 2em;
     padding: 2%;
     font-size: 14px;
 }
 
-.box1 {
-    background-color: beige;
-    width: 40%;
-    border: solid;
-    margin-right: 4%;
-    margin-left: 1em;
-    padding: 2%;
-    font-size: 14px;
+.box ul {
+    list-style-type: disc !important;
+    padding-left:1em !important;
+    margin-left:1em;
+    }
 }
 
 /* makes the above instructions accesible to screens smaller than 992px */
