@@ -1,3 +1,15 @@
+/* Create a box that wraps the whole page, and makes the function accesible to old browser*/
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 0;
+     margin-left: auto;
+     margin-right: auto;
+     width: block;
+ }
+
+/* gives more space on the between navbar items */
 .navbar li {
     padding-left: 30px;
     padding-right: 30px;
@@ -7,9 +19,20 @@
     padding-right: 10%;
 }
 
+/* makes the above instructions accesible to screens smaller than 992px */
 @media (min-width: 992px){
     .navbar li {
         margin-left : 1em;
         margin-right : 1em;
     }
+
+    #myphoto {
+        height: 75%;
+        
+    }
+}
+
+#myphoto {
+    height: 75%;
+   
 }
