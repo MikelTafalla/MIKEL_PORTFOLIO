@@ -45,12 +45,16 @@ body {
     padding: 2%;
     font-size: 14px;
 }
-
+ /*Adds bulletpoints to lists*/
 .box ul {
     list-style-type: disc !important;
     padding-left:1em !important;
     margin-left:1em;
     }
+
+/*footer position and decoration*/
+footer {
+    text-align: center;
 }
 
 /* makes the above instructions accesible to screens smaller than 992px */
