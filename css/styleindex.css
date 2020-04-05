@@ -9,6 +9,10 @@
      width: block;
  }
 
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 /* gives more space on the between navbar items */
 .navbar li {
     padding-left: 30px;
@@ -17,6 +21,38 @@
 
 .navbar-brand {
     padding-right: 10%;
+}
+
+/*size of main picture*/
+#myphoto {
+    height: 75%;
+}
+
+/* Modifies title my story*/
+.container h2 {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/*modifies Education and Job experience boxes*/
+.box {
+    background-color: beige;
+    width: 40%;
+    border: solid;
+    margin-right: 10%;
+    margin-left: 1em;
+    padding: 2%;
+    font-size: 14px;
+}
+
+.box1 {
+    background-color: beige;
+    width: 40%;
+    border: solid;
+    margin-right: 4%;
+    margin-left: 1em;
+    padding: 2%;
+    font-size: 14px;
 }
 
 /* makes the above instructions accesible to screens smaller than 992px */
