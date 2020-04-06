@@ -15,17 +15,13 @@ body {
     background-image: url(../images/smoke.png);
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position-x: 75%; 
+    background-position-x: 80%; 
 }
 
-#carouselExampleCaptions {
-    width: 100%;
-    height: 100%;
-}
 
-#carouselExampleCaptions, h5, p {
+#carouselExampleCaptions, h5, .captioning {
     font-size: small;
-    text-align: left;
+    text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
 }

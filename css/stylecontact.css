@@ -18,6 +18,13 @@ body {
     background-position-x: 5%; 
 }
 
+.title {
+    text-align: right;
+}
+
+.list {
+    text-align: right;
+}
 
 /* gives more space on the between navbar items */
 .navbar li {
