@@ -19,11 +19,30 @@ body {
 }
 
 .title {
-    text-align: right;
+    margin-top: 5%;
+    margin-left: 50%;
+    text-align: center;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
+    font-weight: bold;
 }
 
+/*Sets purple container around contact info*/
 .list {
-    text-align: right;
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background: rgba(190, 144, 212,1);
+    border-radius: 50%;
+    padding: 6%;  
+}
+
+/*Modifies the text within the container. List of contact info*/
+.text {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
 }
 
 /* gives more space on the between navbar items */
@@ -34,6 +53,15 @@ body {
 
 .navbar-brand {
     padding-right: 10%;
+}
+
+/*change font of navbar*/
+nav {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
 }
 
 /* makes the above instructions accesible to screens smaller than 992px */

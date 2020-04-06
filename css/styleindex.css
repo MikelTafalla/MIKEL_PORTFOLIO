@@ -23,6 +23,20 @@ body {
     padding-right: 10%;
 }
 
+/*change font of navbar*/
+nav {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
+}
+
+/*change navbar background color*/
+nav {
+    background-color: rgba(0, 181, 204, 1);
+}
+
 /*size of main picture*/
 #myphoto {
     height: 75%;
@@ -32,6 +46,13 @@ body {
 .container h2 {
     text-align: center;
     padding-bottom: 5%;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
+    font-weight: bold;
+}
+
+p {
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
+    font-size: 16px;
 }
 
 
