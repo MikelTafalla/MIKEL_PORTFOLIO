@@ -42,23 +42,35 @@ nav {
     background-color: rgba(241, 90, 34, 1);
 }
 
-/*stylize text before carousel*/
-.container h2 {
+/*stylize title My Portfolio in body section*/
+.Portfolio {
+    padding-top: 2%;
     font-weight: bold;
     font-size: 30px;
     font-family: bitter, "Open Sans", "Brandon Grotesque";
+    text-align: center;
 }
 
-p {
+/*stylize text in the container of the body (cards)*/
+.container {
     font-size: 20px;
     font-family: bitter, "Open Sans", "Brandon Grotesque";
 }
-/*change features of carousel text*/
-#carouselExampleCaptions, h5, .captioning {
-    font-size: small;
+
+/*stylize footer*/
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
     text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    background-color: rgba(241, 90, 34, 1);
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer {
+    position: sticky;
 }
 
 /* makes the above instructions accesible to screens smaller than 992px */
