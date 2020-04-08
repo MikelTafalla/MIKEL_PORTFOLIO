@@ -89,6 +89,14 @@ footer p{
     padding-bottom: 1%;
 }
 
+footer {
+    bottom: 0px;
+    position: relative;
+    display: inline-block;
+    top:300px;
+}
+
+
 
 /* makes the below instructions accesible to screens bigger than 576px*/
 @media screen and (min-width: 576px) {
