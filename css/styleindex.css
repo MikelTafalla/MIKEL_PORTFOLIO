@@ -9,18 +9,15 @@
      width: block;
  }
 
-body {
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 /* gives more space on the between navbar items */
 .navbar li {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
 .navbar-brand {
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 /*change font of navbar*/
@@ -39,7 +36,11 @@ nav {
 
 /*size of main picture*/
 #myphoto {
-    height: 75%;
+    max-width: 100%;
+    width: 50%;
+    position: relative;
+    top: 5%;
+    margin-left: 25%;
 }
 
 /* Modifies title my story*/
@@ -52,19 +53,21 @@ nav {
 
 p {
     font-family: bitter, "Open Sans", "Brandon Grotesque";
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 
 /*modifies Education and Job experience boxes*/
 .box {
     background-color: beige;
+    max-width: 100%;
     width: 40%;
     border: solid;
     margin-right: 5%;
     margin-left: 2em;
     padding: 2%;
-    font-size: 14px;
+    font-size: 0.8em;
+    overflow-wrap: break-word;
 }
  /*Adds bulletpoints to lists*/
 .box ul {
@@ -73,19 +76,53 @@ p {
     margin-left:1em;
     }
 
-/*footer position and decoration*/
-footer {
+/*stylize footer*/
+footer p{
+    margin-top: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
     text-align: center;
+    background-color:rgba(0, 181, 204, 1);
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-/* makes the above instructions accesible to screens smaller than 992px */
-@media (min-width: 992px){
-    .navbar li {
-        margin-left : 1em;
-        margin-right : 1em;
-    }
 
-    #myphoto {
-        height: 75%;
+/* makes the below instructions accesible to screens bigger than 576px*/
+@media screen and (min-width: 576px) {
+    .box {
+        background-color: beige;
+        max-width: 100%;
+        width: 35%;
+        border: solid;
+        margin-right: 5%;
+        margin-left: 2em;
+        padding: 2%;
+        font-size: 0.8em;
+        overflow-wrap: break-word;
     }
+    #myphoto {
+            max-width: 100%;
+            width: 100%;
+            position: relative;
+            top: 20%;
+            margin-left: 0;
+        }
+
+    nav {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #myphoto {
+        max-width: 100%;
+        width: 50%;
+        position: relative;
+        top: 20%;
+        margin-bottom: 20%;
+        margin-left: 20%;
 }

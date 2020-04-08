@@ -18,41 +18,34 @@ body {
     background-position-x: 5%; 
 }
 
-.title {
+.contactform {
+    padding: 0.3% 20px 0.1% 20px;
     margin-top: 5%;
-    margin-left: 50%;
-    text-align: center;
+    max-width: 100%;
+    width: 60%;
+    background: rgba(190, 144, 212, 0.5);
+    position: relative;
+    top: 20px;
+    left: 20%;
     font-family: bitter, "Open Sans", "Brandon Grotesque";
-    font-weight: bold;
+    font-size: 1em;
+    overflow-wrap: break-word;
 }
 
-/*Sets purple container around contact info*/
-.list {
-    margin-left: 55%;
-    margin-right: 5%;
-    margin-top: 5%;
-    background: rgba(190, 144, 212,1);
-    border-radius: 50%;
-    padding: 6%;  
-}
-
-/*Modifies the text within the container. List of contact info*/
-.text {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+.email {
     text-align: center;
-    font-family: bitter, "Open Sans", "Brandon Grotesque";
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* gives more space on the between navbar items */
 .navbar li {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
 .navbar-brand {
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 /*change font of navbar*/
@@ -64,11 +57,35 @@ nav {
     font-family: bitter, "Open Sans", "Brandon Grotesque";
 }
 
-/* makes the above instructions accesible to screens smaller than 992px */
-@media (min-width: 992px){
-    .navbar li {
-        margin-left : 1em;
-        margin-right : 1em;
-    }
+/*stylize footer*/
+footer p{
+    margin-top: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: bitter, "Open Sans", "Brandon Grotesque";
+    text-align: center;
+    background-color:#33383e;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 
+/* makes the below instructions accesible to screens bigger than 576px*/
+@media screen and (min-width: 576px) {
+    nav {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contactform {
+        padding: 0.3% 20px 0.1% 20px;
+        margin-top: 5%;
+        max-width: 100%;
+        width: 60%;
+        background: rgba(190, 144, 212, 0.5);
+        position: relative;
+        top: 20px;
+        left: 33%;
+        font-family: bitter, "Open Sans", "Brandon Grotesque";
+        font-size: 1em;
+        overflow-wrap: break-word;
 }

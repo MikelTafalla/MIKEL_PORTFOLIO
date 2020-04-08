@@ -12,17 +12,17 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 
-<!-- links to bootstrap CSS and JS-->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 <!-- link to .css for extra modifications to bootstrap-->
 
     <link rel="stylesheet" type="text/css" href="css/stylecontact.css"> 
+
+<!-- Links to @media queries-->
+ 
+    <link rel='stylesheet' media="screen and (min-width: 576px)" href="css/stylecontact.css" />   
+
+<!-- links to bootstrap CSS and JS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <body>
@@ -45,28 +45,127 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/mikel-rodriguez-villar/" target="_blank"><img src="https://img.icons8.com/color/40/000000/linkedin-circled.png" alt="LinkedIn"/></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/MikelTafalla?tab=repositories" target="_blank"><img src="https://img.icons8.com/doodle/40/000000/github--v1.png" alt="GitHub"/></a>
+            </li>
           </ul>
         </div>
     </nav>
     <!--End navbar-->  
 
 </body>
-    <div class="container">
-      <br>
-      <!-- One main row -->
-      <div class="row">
-          <div class="col-md-12 text-justify">
-            <h2 class="title">How to reach me</h2>
-          
-            <div class="list" class="row">
-              <div class="col-md-12">
-                <ul class="text">
-                  <li>Email: mikel362d@gmail.com</li>
-                  <li>Phone# : 805-637-1532</li>
-                  <li> Address: Santa Barbara TBD</li>
-                </ul>
-            </div>
+
+    <!--Section: Contact v.2-->
+<section class="contactform" class="mb-4">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Reach out</h2>
+    <p class="email">mikel362d@gmail.com</p>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I will come back to you within
+      a matter of hours to help you.</p>
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
           </div>
+          <div class="status"></div>
       </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Santa Barbara, CA, 93109</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>805-637-1532</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+<!--Beginning of footer-->
+<footer>
+    <p>
+      Ideas define us. We define ideas
+    </p>
+        <!--To get linkedin and github icons for free-->
+<a href="https://icons8.com/icon/64154/linkedin">LinkedIn icon by Icons8</a>
+<a href="https://icons8.com/icon/80462/github">GitHub icon by Icons8</a>
+</footer>
+
+<!-- links to bootstrap JS-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </html>
