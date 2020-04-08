@@ -112,11 +112,11 @@ footer {
         overflow-wrap: break-word;
     }
     #myphoto {
-            max-width: 100%;
-            width: 100%;
-            position: relative;
-            top: 20%;
-            margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        top: 20%;
+        margin-left: 0;
         }
 
     nav {
