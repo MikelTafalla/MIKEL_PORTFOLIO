@@ -21,9 +21,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/stylecontact.css"> 
 
-<!-- Links to @media queries-->
- 
-    <link rel='stylesheet' media="screen and (min-width: 576px)" href="css/stylecontact.css" />   
+<!-- Link to media query-->
+<link rel="stylesheet" media="screen and (min-width: 568px)" href="css/stylecontact.css" />
 
 <!-- links to bootstrap CSS and JS-->
 
@@ -33,7 +32,7 @@
 <body>
 
     <!--Beginning navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-collapse-xs navbar-collapse-sm navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,85 +59,82 @@
         </div>
     </nav>
     <!--End navbar-->  
-
-</body>
-
     <!--Section: Contact v.2-->
-<section class="contactform" class="mb-4">
+    <section class="contactform" class="mb-4">
 
-  <!--Section heading-->
-  <h2 class="h1-responsive font-weight-bold text-center my-4">Reach out</h2>
-    <p class="email">mikel362d@gmail.com</p>
-  <!--Section description-->
-  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I will come back to you within
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Reach out</h2>
+        <p class="email">mikel362d@gmail.com</p>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I will come back to you within
       a matter of hours to help you.</p>
-  <div class="row">
+    <div class="row">
 
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    <!--Grid column-->
+        <div class="col-xs-9 col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
               <!--Grid row-->
-              <div class="row">
+                <div class="row">
 
                   <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="md-form mb-0">
                           <input type="text" id="name" name="name" class="form-control">
                           <label for="name" class="">Your name</label>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
                   <!--Grid column-->
 
                   <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="md-form mb-0">
                           <input type="text" id="email" name="email" class="form-control">
                           <label for="email" class="">Your email</label>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
                   <!--Grid column-->
 
-              </div>
-              <!--Grid row-->
+                </div>
+                <!--Grid row-->
 
-              <!--Grid row-->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="md-form mb-0">
                           <input type="text" id="subject" name="subject" class="form-control">
                           <label for="subject" class="">Subject</label>
-                      </div>
-                  </div>
-              </div>
+                        </div>
+                    </div>
+                </div>
               <!--Grid row-->
 
               <!--Grid row-->
-              <div class="row">
+                <div class="row">
 
                   <!--Grid column-->
-                  <div class="col-md-12">
+                    <div class="col-xs-12 col-md-12">
 
-                      <div class="md-form">
+                        <div class="md-form">
                           <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                           <label for="message">Your message</label>
-                      </div>
+                        </div>
 
                   </div>
               </div>
               <!--Grid row-->
 
-          </form>
+            </form>
 
-          <div class="text-center text-md-left">
+            <div class="text-center text-md-left">
               <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-          </div>
-          <div class="status"></div>
-      </div>
+            </div>
+            <div class="status"></div>
+        </div>
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-md-3 text-center">
+      <div class="col-xs-3 col-md-3 text-center">
           <ul class="list-unstyled mb-0">
               <li><i class="fas fa-map-marker-alt fa-2x"></i>
                   <p>Santa Barbara, CA, 93109</p>
@@ -151,20 +147,20 @@
       </div>
       <!--Grid column-->
 
-  </div>
+    </div>
 
-</section>
-<!--Section: Contact v.2-->
+    </section>
+    <!--Section: Contact v.2-->
 
-<!--Beginning of footer-->
-<footer>
-    <p>
-      Ideas define us. We define ideas
-    </p>
+    <!--Beginning of footer-->
+    <footer>
+        <p>
+        Ideas define us. We define ideas
+        </p>
         <!--To get linkedin and github icons for free-->
-<a href="https://icons8.com/icon/64154/linkedin">LinkedIn icon by Icons8</a>
-<a href="https://icons8.com/icon/80462/github">GitHub icon by Icons8</a>
-</footer>
+    <a href="https://icons8.com/icon/64154/linkedin">LinkedIn icon by Icons8</a>
+    <a href="https://icons8.com/icon/80462/github">GitHub icon by Icons8</a>
+    </footer>
 
 <!-- links to bootstrap JS-->
 
@@ -172,5 +168,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
 
 </html>

@@ -12,8 +12,8 @@
 
 /* gives more space on the between navbar items */
 .navbar li {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
   }
 
 .navbar-brand {
@@ -35,12 +35,13 @@ nav {
 }
 
 /*size of main picture*/
+
 #myphoto {
     max-width: 100%;
-    width: 50%;
+    width: 100%;
     position: relative;
-    top: 5%;
-    margin-left: 25%;
+    top: 20%;
+    margin-left: 0;
 }
 
 /* Modifies title my story*/
@@ -96,41 +97,10 @@ footer {
     top:300px;
 }
 
-
-
-/* makes the below instructions accesible to screens bigger than 576px*/
-@media screen and (min-width: 576px) {
-    .box {
-        background-color: beige;
-        max-width: 100%;
-        width: 35%;
-        border: solid;
-        margin-right: 5%;
-        margin-left: 2em;
-        padding: 2%;
-        font-size: 0.8em;
-        overflow-wrap: break-word;
-    }
-    #myphoto {
-        max-width: 100%;
-        width: 100%;
-        position: relative;
-        top: 20%;
-        margin-left: 0;
-        }
-
+/*Gives margin to the navbar for screens bigger than xs screens
+@media only screen and (min-width: 568px) {
     nav {
         margin-left: 5%;
         margin-right: 5%;
     }
-}
-
-@media screen and (max-width: 768px) {
-    #myphoto {
-        max-width: 100%;
-        width: 50%;
-        position: relative;
-        top: 20%;
-        margin-bottom: 20%;
-        margin-left: 20%;
 }
